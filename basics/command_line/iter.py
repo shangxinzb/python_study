@@ -1,4 +1,4 @@
-list=[1,2,3,4]
+list = [1, 2, 3, 4]
 it = iter(list)
 
 # 打印迭代器的下一个元素
@@ -17,4 +17,3 @@ while True:
         print(next(it))
     except StopIteration:
         sys.exit("退出")
-
