@@ -116,6 +116,51 @@ def third():
         fish += 1
 
 
+# def four():
+#     # 数据倒推
+#     """
+#     设 x = 鱼的总数数量
+#     y = 每人拿走的鱼的数量
+#     假设最后一个人可以平均分5份鱼多一条 x = 5y + 1
+#     倒数第二个人拿走鱼的数量为 (x / 4) * 5 + 1
+#      以此类推
+#
+#     :return:
+#     """
+#     _x = 6
+#     enough = True
+#     while True:
+#         x = _x
+#         # print(x)
+#         if x % 5 == 1:
+#             # 倒数第二人拿走的数量
+#             if isinstance(x / 4, int):
+#                 # print(x)
+#                 x = x / 4 * 5 + 1
+#                 # 倒数第三人拿走的数量
+#                 if isinstance(x / 4, int):
+#                     x = x / 4 * 5 + 1
+#                     # 倒数第四人拿走的数量
+#                     if isinstance(x / 4, int):
+#                         x = x / 4 * 5 + 1
+#                         # 倒数第五人拿走的数量
+#                         if isinstance(x / 4, int):
+#                             x = x / 4 * 5 + 1
+#                             x = x * 5 + 1
+#                             break
+#                     else:
+#                         _x += 1
+#                 else:
+#                     _x += 1
+#             else:
+#                 _x += 1
+#         else:
+#             _x += 1
+#
+#     print(x)
+
+
+
 if __name__ == '__main__':
     # once()
     # main()
