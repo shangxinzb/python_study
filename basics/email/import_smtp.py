@@ -10,7 +10,7 @@ from email.header import Header
 # 第三方SMTP服务
 mail_host = 'smtp.qq.com'
 mail_user = '1198684173@qq.com'
-mail_password = 'password'
+mail_password = 'ykuphsxrqcnmghcc'
 
 # 发件人
 sender = '1198684173@qq.com'
