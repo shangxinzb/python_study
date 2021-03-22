@@ -27,26 +27,19 @@ message['Subject'] = Header("标题", 'utf-8')
 # 邮件正文内容
 message.attach(MIMEText("发送邮件测试", 'plain', 'utf-8'))
 
-# # 构造附件1，传送当前目录下的test.txt文件
-# att1 = MIMEText(open('test.txt', 'rb').read(), 'base64', 'utf-8')
-# att1["Content-Type"] = 'application/octet-stream'
-# # 这里的filename可以任意写，写什么名字，邮件中显示什么名字
-# att1['Content-Disposition'] = 'attachment; filename="测试文件.txt"'
-# message.attach(att1)
-#
-# # 构造附件2，传送当前目录下的test2.txt文件
-# att2 = MIMEText(open('test2.txt', 'rb').read(), 'base64', 'utf-8')
-# att2["Content-Type"] = 'application/octet-stream'
-# # 这里的filename可以任意写，写什么名字，邮件中显示什么名字
-# att2['Content-Disposition'] = 'attachment; filename="测试文件2.txt"'
-# message.attach(att2)
-
-att1 = MIMEText(open('test.txt', 'rb').read(), 'base64', 'utf-8')
+# 构造附件1，传送当前目录下的test.txt文件
+att1 = MIMEText(open('docs/test.txt', 'rb').read(), 'base64', 'utf-8')
 att1["Content-Type"] = 'application/octet-stream'
 # 这里的filename可以任意写，写什么名字，邮件中显示什么名字
-# PS:文件名称不能写中文，不然附件内容是一个bin文件
-att1["Content-Disposition"] = 'attachment; filename="test.txt"'
+att1['Content-Disposition'] = 'attachment; filename="test1.txt"'
 message.attach(att1)
+
+# 构造附件2，传送当前目录下的test2.txt文件
+att2 = MIMEText(open('docs/test2.txt', 'rb').read(), 'base64', 'utf-8')
+att2["Content-Type"] = 'application/octet-stream'
+# 这里的filename可以任意写，写什么名字，邮件中显示什么名字
+att2['Content-Disposition'] = 'attachment; filename="test2.txt"'
+message.attach(att2)
 
 # 发送邮件
 try:
