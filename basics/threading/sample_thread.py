@@ -28,5 +28,6 @@ except:
     print("error")
 
 # 监听?
+# while 1 是为了一直循环，线程是异步调用的，所以这个脚本不能停
 while 1:
     pass
